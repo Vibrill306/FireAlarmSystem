@@ -103,6 +103,11 @@ padding: 10rem 0rem;
     color: rgb(255,91,54);
 }
 
+.navbar-toggler:focus {
+  outline: none!important;
+  box-shadow: none;
+}
+
 /* -------------------------------------------------section-1--------------------------------------------- */
 
 .section-1 .carousel-inner .carousel-item img{
