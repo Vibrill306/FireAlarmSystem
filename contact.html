@@ -41,18 +41,21 @@
                 <a class="nav-link fw-bold text-center" aria-current="page" href="index.html">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold text-center" href="#">Services</a>
+                <a class="nav-link fw-bold text-center" href="index.html#about">About</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold text-center" href="#">Pages</a>
+                <a class="nav-link fw-bold text-center" href="index.html#products">Products</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold text-center" href="#">News</a>
+                <a class="nav-link fw-bold text-center" href="index.html#services">Services</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link fw-bold text-center" href="#">Gallery</a>
+                <a class="nav-link fw-bold text-center" href="index.html#mission-vision">Mission & Vision</a>
               </li>
             </ul>
+            <div>
+              <a href="contact.html" class="customized-button text-decoration-none">CONTACT US</a>
+            </div>
           </div>
         </div>
     </nav>
@@ -75,22 +78,22 @@
           <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5">
             <img src="assets/images/flaticons/phone-call.png" />
             <p class="title-2">Phone</p>
-            <p class="subtitle-2 pt-2">999-999-999</p>
+            <p class="subtitle-2 pt-2">9999068383</p>
           </div>
           <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5">
             <img src="assets/images/flaticons//world-wide-web.png" />
             <p class="title-2">Website</p>
-            <p class="subtitle-2 pt-2">www.awesomesite.com</p>
+            <p class="subtitle-2 pt-2">www.vibrillfiresafe.com</p>
           </div>
           <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5">
             <img src="assets/images/flaticons/email.png" />
             <p class="title-2">Email</p>
-            <p class="subtitle-2 pt-2">hello@gmail.com</p>
+            <p class="subtitle-2 pt-2">info@vibrillfiresafe.com</p>
           </div>
           <div class="col-6 col-md-3 d-flex flex-column align-items-center pt-5">
             <img src="assets/images/flaticons/pin.png" />
             <p class="title-2">Address</p>
-            <p class="subtitle-2 text-center">99 Roving St., Big City, PKU 23456</p>
+            <p class="subtitle-2 text-center">306, Tower - B Ithum Tower, Block - A, Plot No. 40, Sector - 62, Noida, Uttar Pradesh, Pin - 201301</p>
           </div>
         </div>
       </div>
@@ -103,27 +106,36 @@
         <div class="row">
           <p class="title-2 text-center">Contact Us</p>
           <h1 class="title text-center">Submit Your <span style="color: rgb(255,91,54);">Message</span></h1>
-          <form autocomplete="off" class="py-5">
+
+          <form action="mail.php" method="post" class="py-5">
             <div class="row mb-3">
               <label for="inputName" class="col-sm-2 col-form-label">Name</label>
               <div class="col-sm-10">
-                <input type="text" class="form-control" id="inputName" required>
+                <input type="text" class="form-control" name="name" id="inputName" required>
               </div>
             </div>
             <div class="row mb-3">
               <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
               <div class="col-sm-10">
-                <input type="email" class="form-control" id="inputEmail" required>
+                <input type="email" class="form-control" name="email" id="inputEmail" required>
               </div> 
             </div>
             <div class="row mb-3">
               <label for="inputPhoneNumber" class="col-sm-2 col-form-label">Phone Number</label>
               <div class="col-sm-10">
-                <input type="tel" pattern="[0-9]{10}" class="form-control" id="inputPhoneNumber" required>
+                <input type="tel" pattern="[0-9]{10}" class="form-control" name="number" id="inputPhoneNumber" required>
               </div>
             </div>
-            <button class="customized-button submit-btn">&nbsp Submit &nbsp</button>
+            <div class="row mb-3">
+              <label for="inputPhoneNumber" class="col-sm-2 col-form-label">City</label>
+              <div class="col-sm-10">
+                <input type="tel" pattern="[0-9]{10}" class="form-control" name="city" id="inputPhoneNumber" required>
+              </div>
+            </div>
+            <button class="customized-button submit-btn" type="submit" >&nbsp Submit &nbsp</button>
           </form>
+
+
         </div>
       </div>
     </section>
@@ -134,7 +146,8 @@
       <div class="container container-padding-y-5rem">
         <div class="row">
           <div class="col-12 col-md-2">
-            <img src="assets/images/company-logo/logo.png">
+            <a href="index.html"><img src="assets/images/company-logo/logo.png"></a>
+            <p class="pt-3 text-white">Vibrill Firesafe keeps you informed and ensure the safety of your property, offering expert advice and a wide range of fire alarm systems for residential, commercial, and industrial applications.</p>
           </div>
           <div class="col-12 col-md-3">
             <div class="row footer-text-2 ps-3">
@@ -144,23 +157,23 @@
               <ul class="d-flex flex-column align-items-center">
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">Home</a></li>
+                  <li class="make-inline"><a href="index.html#home" class="footer-links">Home</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">About Us</a></li>
+                  <li class="make-inline"><a href="index.html#about" class="footer-links">About </a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">Services</a></li>
+                  <li class="make-inline"><a href="index.html#products" class="footer-links">Products</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">News</a></li>
+                  <li class="make-inline"><a href="index.html#services" class="footer-links">Services</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">Contact us</a></li>
+                  <li class="make-inline"><a href="index.html#mission-vision" class="footer-links">Mission & Vision</a></li>
                 </div>
   
               </ul>
@@ -174,25 +187,28 @@
               <ul class="d-flex flex-column align-items-center">
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">Fire Suppression</a></li>
+                  <li class="make-inline"><a href="https://www.vibrillfiresafe.com/fire-extinguisher-details.html" class="footer-links">Fire Extinguishers</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">Resque Service</a></li>
+                  <li class="make-inline"><a href="https://www.vibrillfiresafe.com/fire-suppression-system.html" class="footer-links">Fire Suppression System</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">Fire Fighting</a></li>
+                  <li class="make-inline"><a href="https://www.vibrillfiresafe.com/fire-alarm-system.html" class="footer-links">Fire Alarm System</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">
-                      Community Safety</a></li>
+                  <li class="make-inline"><a href="https://www.vibrillfiresafe.com/cctv-security-equipments.html" class="footer-links">CCTV & Security Systems</a></li>
                 </div>
                 <div>
                   <i class="fa-solid fa-check icon-color"></i>
-                  <li class="make-inline"><a href="#" class="footer-links">
-                      Community Safety</a></li>
+                  <li class="make-inline"><a href="https://www.vibrillfiresafe.com/fire-hydrant-sprinklers.html" class="footer-links">Fire Hydrant & Sprinklers</a></li>
+                </div>
+                <div>
+                  <i class="fa-solid fa-check icon-color"></i>
+                  <li class="make-inline"><a href="https://www.vibrillfiresafe.com/watermist-cafs-system.html" class="footer-links">
+                      Watermist/Cafs System</a></li>
                 </div>
   
               </ul>
@@ -208,14 +224,14 @@
                   <i class="fa-solid fa-location-dot icon-color"></i>
                   <h5 class="footer-text-2 make-inline">Address</h5>
                 </div>
-                <p class="text footer-links">99 Roving St., Big City, PKU 23456</p>
+                <p class="text footer-links">306, Tower - B Ithum Tower, Block - A, Plot No. 40, Sector - 62, Noida, Uttar Pradesh, Pin - 201301</p>
               </div>
               <div class="d-flex flex-column align-items-center">
                 <div>
                   <i class="fa-solid fa-location-dot icon-color"></i>
                   <h5 class="footer-text-2 make-inline">Email</h5>
                 </div>
-                <p class="text footer-links">hello@awesomesite.com</p>
+                <p class="text footer-links">info@vibrillfiresafe.com</p>
               </div>
               <div class="d-flex flex-column align-items-center">
                 <div>
@@ -229,6 +245,8 @@
         </div>
       </div>
     </footer>
+  
+  
   
 
     <script src="assets/js/font-awesome/all.js" ></script>
